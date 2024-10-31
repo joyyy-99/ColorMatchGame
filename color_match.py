@@ -19,3 +19,16 @@ pygame.display.set_caption("Color Match Sphere")
 clock = pygame.time.Clock()
 
 
+# Define the Sphere class
+class Sphere:
+    def _init_(self):
+        self.color = random.choice(COLORS)
+        self.x = WIDTH // 2
+        self.y = HEIGHT - 50
+
+    def draw(self):
+        pygame.draw.circle(screen, self.color, (self.x, self.y), SPHERE_RADIUS)
+
+    def change_color(self):
+        self.color = random.choice(COLORS)
+
