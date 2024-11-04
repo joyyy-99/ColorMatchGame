@@ -8,7 +8,7 @@ pygame.init()
 WIDTH, HEIGHT = 800, 600
 SPHERE_RADIUS = 30
 FALL_SPEED = 3  # Initial falling speed
-COLORS = [ (255, 255, 0), (255, 165, 0)]
+COLORS = [ (255, 255, 0), (0, 0, 255)]
 FPS = 60
 
 # Create the game window
@@ -20,7 +20,7 @@ clock = pygame.time.Clock()
 
 # Define the Sphere class
 class Sphere:
-    def _init_(self):
+    def __init__(self):
         self.color = random.choice(COLORS)
         self.x = WIDTH // 2
         self.y = HEIGHT - 50
@@ -33,7 +33,7 @@ class Sphere:
 
 # Define the FallingObject class with bouncing effect
 class FallingObject:
-    def _init_(self):
+    def __init__(self):
         self.color = random.choice(COLORS)
         self.x = random.randint(0, WIDTH - 20)
         self.y = 0
@@ -106,3 +106,40 @@ def game_loop():
 
             # Draw the sphere
             sphere.draw()
+
+            # Draw score
+            font = pygame.font.SysFont(None, 36)
+            score_text = font.render(f'Score: {score}', True, (0, 0, 0))
+            screen.blit(score_text, (10, 10))
+
+            # Speed up game
+            # speed_up_counter += 1
+            # if speed_up_counter > 100:  # Increase speed every 100 frames
+            #     global FALL_SPEED
+            #     FALL_SPEED += 1
+            #     speed_up_counter = 0
+        else:
+            # Game over screen
+            font = pygame.font.SysFont(None, 48)
+            game_over_text = font.render('Game Over!', True, (255, 0, 0))
+            score_text = font.render(f'Final Score: {score}', True, (0, 0, 0))
+            restart_text = font.render('Press R to Restart', True, (0, 0, 0))
+            screen.blit(game_over_text, (WIDTH // 2 - 100, HEIGHT // 2 - 50))
+            screen.blit(score_text, (WIDTH // 2 - 100, HEIGHT // 2))
+            screen.blit(restart_text, (WIDTH // 2 - 150, HEIGHT // 2 + 50))
+
+            # Restart game if 'R' is pressed
+            if keys[pygame.K_r]:
+                game_over = False
+                sphere = Sphere()
+                falling_objects = []
+                score = 0
+                FALL_SPEED = 5  # Reset fall speed
+                speed_up_counter = 0
+
+        pygame.display.flip()  # Update display
+        clock.tick(FPS)  # Limit frames per second
+
+if __name__ == "__main__":
+    game_loop()
+
