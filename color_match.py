@@ -18,7 +18,6 @@ pygame.display.set_caption("Color Match Sphere")
 # Set up the clock
 clock = pygame.time.Clock()
 
-
 # Define the Sphere class
 class Sphere:
     def _init_(self):
@@ -56,5 +55,3 @@ class FallingObject:
 
     def draw(self):
         pygame.draw.rect(screen, self.color, (self.x, self.y, 20, 20))
-
-
