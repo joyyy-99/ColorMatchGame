@@ -27,12 +27,12 @@ Color Match Sphere is an engaging Pygame-based game where players control a sphe
    ```
 2. Download or clone the repository:
    ```bash
-   git clone https://github.com/username/ColorMatchSphere.git
+   git clone git@github.com:joyyy-99/ColorMatchGame.git
    ```
 3. Navigate to the project directory and run the game:
    ```bash
-   cd ColorMatchSphere
-   python color_match_sphere.py
+   cd ColorMatchGame
+   python color_match.py
    ```
 
 ## Requirements
