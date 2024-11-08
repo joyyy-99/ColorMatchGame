@@ -9,10 +9,12 @@ Color Match Sphere is an engaging Pygame-based game where players control a sphe
 - **Game Over and Restart**: A game-over screen shows the final score and provides an option to restart the game.
 
 ## Gameplay
-1. Move the sphere left or right using the arrow keys.
-2. Press the `Space` key to change the sphere’s color.
-3. Match the sphere’s color with falling objects to earn points.
-4. Avoid mismatches, as they will end the game.
+Move the Sphere: Use the left and right arrow keys to move the sphere horizontally.
+Change Sphere Color: Press the Space key or left-click on the sphere to change its color.
+Match Colors: Match the sphere’s color with falling objects to earn points. Avoid mismatches, as they reduce lives. Losing all lives ends the game.
+Difficulty Selection: At the start of the game, choose a difficulty level (Easy, Medium, or Hard), which affects the speed and frequency of falling objects.
+Pause/Resume: Click the "Pause" button in the top-right corner to pause or resume the game.
+Restart: After a game over, click the "Restart" button to play again with a reset score and lives.
 
 ## Controls
 - **Left Arrow Key**: Move sphere left
