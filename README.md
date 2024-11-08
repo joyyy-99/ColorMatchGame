@@ -1,6 +1,6 @@
 # Color Match Game
 
-Color Match Sphere is an engaging Pygame-based game where players control a sphere and match its color to falling objects to earn points. As objects fall, the player must strategically change the sphere's color to match the objects and increase their score. This game features bouncing objects and a simple game-over mechanism, challenging players to improve their color-matching skills over time.
+Color Match Game is an engaging Pygame-based game where players control a sphere and match its color to falling objects to earn points. As objects fall, the player must strategically change the sphere's color to match the objects and increase their score. This game features bouncing objects and a simple game-over mechanism, challenging players to improve their color-matching skills over time.
 
 ## Features
 - **Interactive Gameplay**: Control a sphere that can move left and right and change colors to match falling objects.
@@ -33,7 +33,11 @@ Color Match Sphere is an engaging Pygame-based game where players control a sphe
    ```bash
    git clone https://github.com/joyyy-99/ColorMatchGame.git
    ```
-4. Navigate to the project directory and run the game:
+4. install the Required libraries from requirements.txt:
+    ```bash
+   pip install -r requirements.txt
+   ```
+5. Navigate to the project directory and run the game:
    ```bash
    cd ColorMatchGame
    python color_match.py
