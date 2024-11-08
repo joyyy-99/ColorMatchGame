@@ -20,7 +20,6 @@ Color Match Sphere is an engaging Pygame-based game where players control a sphe
 - **Left Arrow Key**: Move sphere left
 - **Right Arrow Key**: Move sphere right
 - **Space Key**: Change sphere color
-- **R Key**: Restart the game after Game Over
 
 ## Installation and Setup
 1. install pycharm
