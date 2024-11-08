@@ -30,9 +30,12 @@ ColorMatchGame/
 - **Left Arrow Key**: Move sphere left
 - **Right Arrow Key**: Move sphere right
 - **Space Key**: Change sphere color
+- **Pause Button**: pause the game.
+- **Play Button**: resume the game.
+- **Restart Button**: restarts the game.
 
 ## Installation and Setup
-1. install pycharm
+1. Install pycharm
 
 2. Ensure you have Python and Pygame installed.
    ```bash
@@ -42,7 +45,7 @@ ColorMatchGame/
    ```bash
    git clone https://github.com/joyyy-99/ColorMatchGame.git
    ```
-4. install the Required libraries from requirements.txt:
+4. Install the Required libraries from requirements.txt:
     ```bash
    pip install -r requirements.txt
    ```
