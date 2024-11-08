@@ -7,7 +7,7 @@ Color Match Sphere is an engaging Pygame-based game where players control a sphe
 - **Bouncing Objects**: Falling objects bounce off screen edges, adding an extra challenge.
 - **Score Tracking**: Players earn points by successfully matching the sphere's color with falling objects.
 - **Game Over and Restart**: A game-over screen shows the final score and provides an option to restart the game.
-- **Difficulty levels**: Players can select their preferred difficulty level, which include: easy medium and hard.
+- **Difficulty levels**: Players can select their preferred difficulty level, which include: easy, medium and hard.
 
 ## Gameplay
 - **Move the Sphere**: Use the left and right arrow keys to move the sphere horizontally.
